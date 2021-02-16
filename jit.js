@@ -3,7 +3,8 @@ var quill = new Quill('#editor-container', {
     modules : {
       toolbar: false
     },
-    theme: 'snow'  // or 'bubble'
+    theme: 'snow',  // or 'bubble'
+    scrollingContainer: 'html'
   });
 
 quill.keyboard.addBinding({
