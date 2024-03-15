@@ -1,7 +1,7 @@
-.container {
+ /* .container {
     width: calc(95ch + 40px);
     margin: auto;
-    background: black;
+    background: blue;
     color: white;
     font-family: 'Roboto Mono', monospace;
     padding: 40px 20px 40px;
@@ -28,7 +28,7 @@
 }
 
 body {
-    background: black;
+    background: blue;
 }
 
 p {
@@ -55,4 +55,83 @@ a {
 
 ul {
     list-style-type: '- ';
+}
+*/
+#toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: blue;
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00ffb7;
+}  
+
+/* Default theme */
+
+
+.container {
+    width: calc(95ch + 40px);
+    margin: auto;
+    background: black; 
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding: 40px 20px 40px;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.ql-container {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.ql-editor {
+    height: -webkit-fill-available;
+    font-size: 16px;
+    line-height: 1.8em;
+    border: 0px;
+    caret-color: #00ffb7;
+}
+
+.ql-editor:focus {
+    outline: none;
+}
+
+body {
+    background: black; 
+    color: white; 
+}
+
+.light-mode .container {
+    background: white; 
+    color: black; 
+}
+
+body.light-mode{
+    background: white; 
+    color: black; 
+}
+.light-mode .ql-editor {
+    caret-color:black;
+}
+#toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: blue;
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #00ffb7;
 }
