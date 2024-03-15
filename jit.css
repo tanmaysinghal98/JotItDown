@@ -1,0 +1,58 @@
+.container {
+    width: calc(95ch + 40px);
+    margin: auto;
+    background: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding: 40px 20px 40px;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.ql-container {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+
+.ql-editor {
+    height: -webkit-fill-available;
+    font-size: 16px;
+    line-height: 1.8em;
+    border: 0px;
+    caret-color: #00ffb7;
+}
+
+.ql-editor:focus {
+    outline: none;
+}
+
+body {
+    background: black;
+}
+
+p {
+    margin: 0em;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 1em 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 1em 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a {
+    color: #00ffb7;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: '- ';
+}
