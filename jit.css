@@ -66,3 +66,9 @@ body.light-mode{
     color: black;
     box-shadow: 0px 0px 10px 0px gray;
 }
+a {
+    color:#00ffb7;
+}
+.light-mode a{
+    color: blue;
+}
