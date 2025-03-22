@@ -16,6 +16,8 @@ function applyStoredTheme() {
         const toggleButton = document.getElementById('toggle-button');
         toggleButton.innerText = 'Dark Mode';
     }else{
+        document.body.classList.remove('light-mode'); // Apply dark mode
+        document.body.classList.add('dark-mode');
         const toggleButton = document.getElementById('toggle-button');
         toggleButton.innerText = 'Light Mode';
     }
@@ -26,3 +28,7 @@ document.addEventListener('DOMContentLoaded', applyStoredTheme);
 
 // Event listener for the toggle button
 document.getElementById('toggle-button').addEventListener('click', toggleTheme);
+
+window.addEventListener('storage', () => {
+    applyStoredTheme();
+});
