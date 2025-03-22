@@ -1,12 +1,19 @@
 {
-    "manifest_version": 2,
-    "name": "JotItDown",
-    "description": "Type and Forget",
-    "version": "3.0",
-    "chrome_url_overrides" : {
-        "newtab": "newtab.html"
-    },
-    "permissions": [
-        "storage"
-    ]
- }
+  "manifest_version": 3,
+  "name": "JotItDown",
+  "description": "Type and Forget",
+  "version": "3.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
